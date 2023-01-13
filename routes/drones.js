@@ -9,7 +9,7 @@ router.get('/drones', async (req, res, next) => {
     const drones = await Drone.find({});
     res.render('drones/list', { drones });
   } catch (error) {
-    
+    next(error);
   }
 });
 
@@ -25,7 +25,7 @@ router.post('/drones/create', (req, res, next) => {
     const newDrone = Drone.create({ name, propellers, maxSpeed });
     res.redirect('/drones');
   } catch (error) {
-    
+    next(error);
   }
 });
 
