@@ -6,8 +6,8 @@ body {
   height: 100vh;
 }
 .nav-bar {
-  height: 7%;
-  background-color: rgba(14,12,10,0.7);
+  height: 6vh;
+  background-color: rgba(14,12,10,0.8);
   /* background-color: #0E0C0A; */
   position: fixed;
   width: 100%;
@@ -16,16 +16,106 @@ body {
   align-items: center;
 }
 .page {
-  padding-top: 6%;
-  height: 100%;
-  background-image: url('/images/home2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100vh;
+  padding-left: 10%;
 }
 a {
   text-decoration: none;
   color: #97B5D6;
   font-weight: 800;
 }
+h2 {
+  font-size: 3rem;
+}
 
+ /* Home page */
+ #home-page {
+  background-image: url('/images/home2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .home-title {
+  font-size: 8rem;
+  font-weight: 900;
+ }
+ .home-text {
+  margin-top: 20px;
+  font-size: 2rem;
+ }
 
+ /* List pages */
+ #list-page {
+  background-image: url('/images/graphic.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+ }
+.drone-card-container {
+  margin-top: 3%;
+  display: flex;
+  gap: 5%;
+}
+.drone-card {
+  background-color: rgba(14,12,10,0.8);
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 2%;
+  line-height: 25px;
+}
+.drone-card button {
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  color: #982016;
+  border: none;
+  padding: 0;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+/* Forms */
+.forms {
+  background-image: url('/images/graphic.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.forms form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: aliceblue;
+}
+.forms form label {
+  border-bottom: 1px solid rgba(14,12,10,0.8);
+  padding-bottom: 5px;
+}
+.forms form input {
+  font-family: inherit;
+  width: 50%;
+  height: 40px;
+  padding-left: 10px;
+  background-color: rgba(14,12,10,0.8);
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+  margin-bottom: 10px;
+}
+.forms form button {
+  font-family: inherit;
+  width: 30%;
+  align-self: center;
+  margin-top: 30px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #D1A592;
+}
