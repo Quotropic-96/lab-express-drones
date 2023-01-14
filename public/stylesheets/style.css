@@ -15,6 +15,9 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.nav-bar a {
+  color: aliceblue;
+}
 .page {
   height: 100vh;
   padding-left: 10%;
@@ -26,6 +29,7 @@ a {
 }
 h2 {
   font-size: 3rem;
+  color: aliceblue;
 }
 
  /* Home page */
@@ -33,6 +37,7 @@ h2 {
   background-image: url('/images/home2.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,10 +45,12 @@ h2 {
  .home-title {
   font-size: 8rem;
   font-weight: 900;
+  color: aliceblue;
  }
  .home-text {
   margin-top: 20px;
   font-size: 2rem;
+  color: aliceblue;
  }
 
  /* List pages */
